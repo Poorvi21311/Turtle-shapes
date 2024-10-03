@@ -1,0 +1,73 @@
+import turtle
+screen=turtle.Screen()
+screen.setup(800,800)
+screen.bgcolor("red")
+# rectangle
+poorvi=turtle.Turtle()
+poorvi.speed(0)
+poorvi.fillcolor("blue")
+poorvi.begin_fill()
+poorvi.forward(160)
+poorvi.left(90)
+poorvi.forward(70)
+poorvi.left(90)
+poorvi.forward(160)
+poorvi.left(90)
+poorvi.forward(70)
+poorvi.left(90)
+poorvi.end_fill()
+
+#triangle
+poorvi.penup()
+poorvi.goto(-250,200)
+poorvi.pendown()
+poorvi.fillcolor("yellow")
+poorvi.begin_fill()
+for i in range(3):
+    poorvi.forward(90)
+    poorvi.left(120)
+poorvi.end_fill()
+
+ #pentegon
+poorvi.penup()
+poorvi.goto(200,200)
+poorvi.pendown()
+poorvi.fillcolor("purple")
+poorvi.begin_fill()
+for i in range (5):
+    poorvi.forward(40)
+    poorvi.left(72)
+poorvi.end_fill()
+
+#hexagon
+poorvi.penup()
+poorvi.goto(-200,-200)
+poorvi.pendown()
+poorvi.fillcolor("orange")
+poorvi.begin_fill()
+for i in range(6):
+ poorvi.forward(40)
+ poorvi.left(60)
+poorvi.end_fill()
+
+
+#parellegram
+poorvi.penup()
+poorvi.goto(100,-200)
+poorvi.pendown()
+poorvi.fillcolor("pink")
+poorvi.begin_fill()
+poorvi.forward(200)
+poorvi.right(120)
+poorvi.forward(100)
+poorvi.right(60)
+poorvi.forward(200)
+poorvi.right(120)
+poorvi.forward(100)
+
+
+poorvi.end_fill()
+
+screen.mainloop()
+
+
